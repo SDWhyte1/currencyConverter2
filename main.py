@@ -25,7 +25,7 @@ app.layout = dbc.Container([
                 dbc.Col(html.Button(id='submit-button-state', n_clicks=0, children='Submit',style={'width':'100%'}),),
             ]),
     html.Div(children='',id='exchange-rate')
-],style={'backgroundColor': 'lightblue'} )
+])
 
 @callback(Output(component_id='exchange-rate', component_property='children'),
     Input(component_id='submit-button-state', component_property='n_clicks'),
